@@ -52,7 +52,7 @@ public class Queue {
 		 * @return new queue list
 		 */
 		public Room dequeue() {
-			Room temp = queueList[first];
+			Room temp = queueList[head];
 			head++;
 			if (head == MAX_LENGTH) {
 				head = 0;
